@@ -1,7 +1,3 @@
-Com certeza\! Aqui está o arquivo **`README.md`** completo e detalhado, seguindo o padrão que discutimos, para que qualquer pessoa consiga configurar e rodar o seu projeto do zero.
-
------
-
 # 📚 TaskFlow Manager: Gerenciador de Tarefas CRUD
 
 ## 📝 Visão Geral do Projeto
