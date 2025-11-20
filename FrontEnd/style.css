@@ -1,0 +1,106 @@
+
+/* --- 1. Definições de Cores --- */
+:root {
+    /* Roxo Principal */
+    --purple-main: #7d3c98; 
+    /* Roxo Claro para fundos/seleções */
+    --purple-light: #e8daef; 
+    /* Roxo Escuro para texto */
+    --purple-dark: #5b2c6f; 
+}
+
+/* --- 2. Elementos Principais --- */
+body {
+    /* Define o fundo da página como um roxo muito claro */
+    background-color: var(--purple-light) !important; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.custom-card {
+    border-radius: 10px;
+    /* Ajusta a largura máxima para melhor visualização */
+    max-width: 900px; 
+    padding: 0;
+}
+
+.custom-bg {
+    background-color: var(--purple-main) !important;
+}
+
+.text-purple {
+    color: var(--purple-dark) !important;
+    font-weight: 600;
+}
+
+/* --- 3. Botões e Formulário --- */
+/* Sobrescreve o botão primário para ser roxo */
+.btn-primary, .custom-btn-add {
+    background-color: var(--purple-main) !important;
+    border-color: var(--purple-dark) !important;
+    transition: background-color 0.2s;
+}
+
+.btn-primary:hover, .custom-btn-add:hover {
+    background-color: var(--purple-dark) !important;
+    border-color: var(--purple-main) !important;
+}
+
+/* Estilização do Botão Ordenar */
+.custom-btn-sort {
+    color: var(--purple-main) !important;
+    border-color: var(--purple-light) !important;
+}
+
+/* --- 4. Lista de Tarefas --- */
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--purple-light); /* Borda sutilmente roxa */
+    margin-bottom: 5px;
+    border-radius: 6px !important;
+}
+
+/* Tarefas Concluídas */
+.task-item.done {
+    background-color: #f7f3f9; /* Fundo mais claro */
+    text-decoration: line-through;
+    color: #95a5a6; /* Cor cinza para concluído */
+}
+
+/* Botões de Ação na Lista */
+.action-btn {
+    padding: 5px 10px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    border-radius: 4px;
+    margin-left: 5px;
+}
+
+.done-btn {
+    background-color: #f39c12; /* Laranja para Concluir/Reabrir */
+    color: white;
+    border: none;
+}
+
+.task-item.done .done-btn {
+    background-color: #3498db; /* Azul para "Reabrir" */
+}
+
+.delete-btn {
+    background-color: #e74c3c; /* Vermelho para Excluir */
+    color: white;
+    border: none;
+}
+
+.task-title-due {
+    flex-grow: 1;
+    font-size: 1.05rem;
+    /* Garante que o texto roxo principal seja usado */
+    color: var(--purple-dark); 
+}
+
+.task-item.done .task-title-due {
+    /* Sobrescreve a cor do texto para cinza quando concluído */
+    color: #95a5a6; 
+}
